@@ -1,0 +1,172 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 1% 0;
+    text-align: center;
+    box-shadow: 0 0 5px #434343;
+    z-index: 1;
+    background-color: #f0efed;
+}
+
+header li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1%;
+}
+
+header li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #434343;
+    font-size: .8rem;
+}
+
+header li a:hover {
+    color: #edc7c7;
+}
+
+/*F0EFED*/
+
+#home {
+    height: 100vh;
+    background-color: #f0efed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 500%;
+    font-weight: 900;
+    color: #edc7c7;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+h1 > span {
+    position: absolute;
+    font-family: 'Sacramento', cursive;
+    font-weight: 300;
+    color: #434343;
+    font-size: 70%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home p {
+    font-size: 230%;
+    color: #edc7c7;
+}
+
+#candles {
+    padding: 5%;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 400;
+    color: #434343;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+.candles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+}
+
+.candle {
+    text-align: center;
+}
+
+.candle img {
+    max-width: 100%;
+}
+
+.candle img:hover {
+    transform: scale(1.5);
+    filter: drop-shadow(0 0 15px #000000);
+    transition: all .5s ease;
+}
+
+#contact {
+    background-color: #f0efed;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#contact a {
+    color: #434343;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact a:hover {
+    color: #edbfc4;
+}
+
+#contact p {
+    margin-top: 2%;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 450%;
+        margin-bottom: 15%;
+    }
+    #home p {
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 350%;
+    }
+
+    #home p {
+        font-size: 130%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 200%;
+    }
+    #home p {
+        font-size: 100%;
+    }
+    #contact p {
+        font-size: .7rem;
+    }
+}
